@@ -3,15 +3,17 @@ package main
 import "testing"
 
 func TestFatorial(t *testing.T) {
-	result := Fatorial(5)
-	if result != 120 {
-		t.Errorf("Fatorial(5) = %d; want 120", result)
+	test := Fatorial(5)
+	result := 120
+	if test != result {
+		t.Errorf("Fatorial(5) = %d; want %d", test, result)
 	}
 }
 
 func TestFatorial2(t *testing.T) {
-	result := Fatorial(5)
-	if result != 140 {
-		t.Errorf("Fatorial(5) = %d; want 120", result)
+	test := Fatorial(5)
+	result := 140
+	if test != result {
+		t.Errorf("Fatorial(5) = %d; want %d", test, result)
 	}
 }
