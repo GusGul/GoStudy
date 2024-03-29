@@ -2,7 +2,7 @@ package main
 
 import "testing"
 
-func TestFatorial(t *testing.T) {
+func ShouldFatorialCorrect(t *testing.T) {
 	test := Fatorial(5)
 	result := 120
 	if test != result {
@@ -10,7 +10,7 @@ func TestFatorial(t *testing.T) {
 	}
 }
 
-func TestFatorial2(t *testing.T) {
+func ShouldFatorialIncorrect(t *testing.T) {
 	test := Fatorial(5)
 	result := 140
 	if test != result {
